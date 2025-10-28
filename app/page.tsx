@@ -6,22 +6,37 @@ export default function Home() {
       <section className="py-16"> 
         <h1 className="text-5xl md:text-6xl font-bold leading-tight">
           Hello 👋<br className="hidden md:block" />
-          <br></br>I'm Lucas
+          I'm Lucas
         </h1>
         <p className="mt-4 max-w-2xl text-mist/80">
           I like cats
         </p>
-        <div className="mt-8 flex gap -3">
+        <div className="mt-8 flex gap-3">
           <a href="#projects" className="rounded-full px-4 py-2 font-semibold text-evergreen bg-gradient-to-r from-coral to-amber">
             View my projects
           </a>
         </div>
       </section>
-      {/* Projects */}
-      <section id="projects" className="py-20">
-        <h2 classNmae="text-3xl font-bold">Projects</h2>
+    {/* Projects */}
+      <section id="projects" className="py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">Projects</h2>
         <p className="mt-3 text-mist/80">Some cool projects</p>
         <div className="mt-8 grid md:grid-cols-2 gap-6">
+          <Project
+            title="test 1"
+            summary="this is a test summary"
+            stack={["Next.js", "Tailwind CSS", "Vercel"]}
+          />
+          <Project
+            title="test 1"
+            summary="this is a test summary"
+            stack={["Next.js", "Tailwind CSS", "Vercel"]}
+          />
+          <Project
+            title="test 1"
+            summary="this is a test summary"
+            stack={["Next.js", "Tailwind CSS", "Vercel"]}
+          />
           <Project
             title="test 1"
             summary="this is a test summary"
@@ -32,14 +47,22 @@ export default function Home() {
 
 
       </section>
-
-    <main className="min-h-screen bg-evergreen text-mist flex items-center justify-center">
-      <h1 className="text-5xl font-bold">Hello, I'm building my site 🌿</h1>
-      <button className="mt-6 rounded-full px-4 py-2 font-semibold text-evergreen bg-gradient-to-r from-coral to-amber">
-        Gradient CTA
-      </button>
-
-    </main>
+    {/* About me */}
+      <section id="about" className="py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">About</h2>
+        <p className="mt-3 max-w-prose text-mist/80">
+          I'm a computer science undergraduate at McMaster University.
+        </p>
+      </section>
+    {/* Contact */}
+      <section id="contact" className="py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">Get in touch</h2>
+        <p className="mt-3 max-w-prose text-mist/80">
+          Email me at <a className="underline" href="mailto:hello@lucaszheng.net">hello@lucaszheng.net</a>
+          <br></br>
+          Text me at <a className="underline">+1 289-707-0012</a>
+        </p>
+      </section>
     </>
   )
 }

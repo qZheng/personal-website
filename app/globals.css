@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0E2A25;   /* evergreen (dark bg) */
+  --background: #00211e;   /* evergreen (dark bg) */
   --foreground: #EAF2EE;   /* mist (light text) */
 }
 
 @theme inline {
   /* expose colors to Tailwind classes (bg-*, text-*, from-*, to-*) */
-  --color-evergreen: #0E2A25;
+  --color-evergreen: #00211e;
   --color-mist: #EAF2EE;
   --color-coral: #FF6A3D;
   --color-amber: #FFB54A;
@@ -39,4 +39,8 @@ body {
 :focus-visible {
   outline: 2px solid oklch(83% 0.14 170);
   outline-offset: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
