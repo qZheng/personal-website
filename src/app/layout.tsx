@@ -1,4 +1,5 @@
 // app/layout.tsx
+import Header from "@/components/Header"
 import "./globals.css"
 import Link from "next/link"
 
@@ -11,9 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-evergreen text-mist">
+        <Header />
         <div className="mx-auto max-w-5xl px-6">
-          <Header />
-          <main className="pt-24 md:pt-28">{children}</main>
+          <main className="pt-28">{children}</main>
           <Footer />
         </div>
       </body>
@@ -21,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   )
 }
 
-function Header() {
+/* function Header() {
   return (
     <header className="sticky top-4 z-50 flex justify-between items-center px-6 pointer-events-none">
       <div className="
@@ -54,7 +55,7 @@ function Header() {
     </header>
     
   )
-}
+} */
 
 function Footer() {
   return (
