@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <>
     {/* Intro */}
-      <section className="py-16"> 
+      <section id="home" className="py-16"> 
         <h1 className="text-5xl md:text-6xl font-bold leading-tight">
           Hello 👋<br className="hidden md:block" />
           I'm Lucas
