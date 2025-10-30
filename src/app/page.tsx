@@ -1,24 +1,28 @@
 import Image from "next/image";
+import MeCard from "@/components/MeCard"
+import Parallax from "@/components/Parallax"
 export default function Home() {
   return (
     <>
     {/* Intro */}
-      <section id="home" className="py-16"> 
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-          Hello 👋<br className="hidden md:block" />
-          I'm Lucas
-        </h1>
-        <p className="mt-4 max-w-2xl text-mist/80">
-          I like cats
-        </p>
-        <div className="mt-8 flex gap-3">
-          <a href="#projects" className="rounded-full px-4 py-2 font-semibold text-evergreen bg-gradient-to-r from-coral to-amber">
-            View my projects
-          </a>
-        </div>
+      <section id="home" /* className="py-16" */> 
+        <Parallax distance={500}>
+          <div className="mx-auto max-w-5xl px-6 min-h-screen pt-24 md:pt-28 pb-14">
+
+              <MeCard
+                name="Lucas"
+                tagline="Proud cat owner"
+                location="Oakville, Ontario, Canada"
+                github="https://github.com/qZheng"
+                linkedin="https://www.linkedin.com/in/lucas-q-zheng"
+                // extraLink={{ href: "https://your.site", label: "Portfolio" }}
+                avatarSrc="/images/cat.png"
+              />
+            </div>
+          </Parallax>
       </section>
     {/* Projects */}
-      <section id="projects" className="py-20 scroll-mt-24">
+      <section id="projects" className="py-20 scroll-mt-24 mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-bold">Projects</h2>
         <p className="mt-3 text-mist/80">Some cool projects</p>
         <div className="mt-8 grid md:grid-cols-2 gap-6">
@@ -48,14 +52,14 @@ export default function Home() {
 
       </section>
     {/* About me */}
-      <section id="about" className="py-20 scroll-mt-24">
+      <section id="about" className="py-20 scroll-mt-24 mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-bold">About</h2>
         <p className="mt-3 max-w-prose text-mist/80">
           I'm a computer science undergraduate at McMaster University.
         </p>
       </section>
     {/* Contact */}
-      <section id="contact" className="py-20 scroll-mt-24">
+      <section id="contact" className="py-20 scroll-mt-24 mx-auto max-w-5xl px-6">
         <h2 className="text-3xl font-bold">Get in touch</h2>
         <p className="mt-3 max-w-prose text-mist/80">
           Email me at <a className="underline" href="mailto:hello@lucaszheng.net">hello@lucaszheng.net</a>

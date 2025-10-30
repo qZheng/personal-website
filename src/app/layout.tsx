@@ -13,8 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-evergreen text-mist">
         <Header />
-        <div className="mx-auto max-w-5xl px-6">
-          <main className="pt-28">{children}</main>
+        <div className="mx-auto">
+          <main>{children}</main>
           <Footer />
         </div>
       </body>
@@ -59,11 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 function Footer() {
   return (
-    <footer className="py-12 text-sm text-mist/70">
+    <footer className="py-12 text-sm text-mist/70 mx-auto max-w-5xl px-6">
       <div className="h-px w-full bg-ink/60 mb-8" />
-      <p>While not tackling LeetCode problems, Lucas is an avid mountain biker, reads sci-fi/fantasy books, and plays guitar. He has a cat named Latte and a sister who was fortunately not named Latte.</p>
+      <p>While not tackling LeetCode problems, I'm an avid mountain biker, love reading sci-fi/fantasy books, and play guitar. I have a cat named Latte and a sister who was fortunately not named Latte.</p>
       <br></br>
-      <p>© {new Date().getFullYear()} Lucas Zheng</p>
+      <p>Made with ❤️ by Lucas Zheng</p>
     </footer>
   )
 }

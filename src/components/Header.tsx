@@ -51,29 +51,32 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-4 z-50 flex justify-between items-center px-6">
-      <div
-        className="
-          rounded-full px-4 py-2 border border-ink/50
-          bg-surface/50 supports-[backdrop-filter]:bg-evergreen/30
-          backdrop-blur shadow-lg ring-1 ring-ink/30
-        "
-      >
-        <a href="#home" className="font-semibold tracking-wide text-sm">Lucas&nbsp;Zheng</a>
-      </div>
-      <div
-        className="
-          rounded-full px-4 py-2 border border-ink/50
-          bg-surface/50 supports-[backdrop-filter]:bg-evergreen/30
-          backdrop-blur shadow-lg ring-1 ring-ink/30
-        "
-      >
-        <nav className="flex items-center gap-2 text-sm">
-        {item("#projects", "Projects", "projects")}
-        {item("#about", "About", "about")}
-        {item("#contact", "Contact", "contact")}
-        </nav>
-      </div>
+    <header className="fixed inset-x-0 top-4 z-50">
+        <div className="mx-auto max-w-5xl px-6 flex items-center justify-between">
+        <div
+            className="
+            rounded-full px-4 py-2 border border-ink/50
+            bg-surface/50 supports-[backdrop-filter]:bg-evergreen/30
+            backdrop-blur shadow-lg ring-1 ring-ink/30
+            "
+        >
+            <a href="#home" className="font-semibold tracking-wide text-sm">Lucas&nbsp;Zheng</a>
+        </div>
+        <div
+            className="
+            rounded-full px-4 py-2 border border-ink/50
+            bg-surface/50 supports-[backdrop-filter]:bg-evergreen/30
+            backdrop-blur shadow-lg ring-1 ring-ink/30
+            "
+        >
+
+            <nav className="flex items-center gap-2 text-sm">
+            {item("#projects", "Projects", "projects")}
+            {item("#about", "About", "about")}
+            {item("#contact", "Contact", "contact")}
+            </nav>
+        </div>
+        </div>
     </header>
   )
 }
