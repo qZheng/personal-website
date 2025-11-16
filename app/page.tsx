@@ -8,28 +8,30 @@ export default function HomePage() {
       <img
         src="/images/latte_and_i.jpeg"
         alt="Lucas Zheng"
-        className="w-32 h-32 object-cover rounded-md shadow-sm float-right ml-6 mb-2"
+        className="w-32 h-32 object-cover rounded-lg shadow-sm float-right ml-6 mb-2"
       />
       <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
 
       <p className="text-slate-700">
-        A 2nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.</a> See my <a>projects.</a>
+        A 2nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
+        </a> Amateur <a>photographer.</a> 
+        {/* todo add random photo on hover */}
       </p>
-      <p>
-        While I'm not tackling LeetCode problems, I'm an avid mountain biker, love reading sci-fi/fantasy books, and play the guitar. I have a cat named Latte and a sister who was fortunately not named Latte.
-      </p>
-
       <ul className="list-disc pl-5 space-y-2 text-slate-700">
         <li>
-          <span className="font-semibold">Here's a point.</span> I have a cat named Latte... He&apos;s super cute.
+          <span className="font-semibold"><a href="/projects">See my projects.</a></span> I'm interested in data science and deep learning models.
         </li>
         <li>
-          <span className="font-semibold">Another point.</span> I'm not sure how to fill out this website
+          <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Summer 2026 internships!
         </li>
       </ul>
+      <p>
+        While not tackling LeetCode problems, I'm probably tackling the local trails on my mountain bike. I also love reading sci-fi/fantasy books, play the guitar, and have a cat named Latte and a sister who was fortunately not named Latte.
+      </p>
+
 
       <p className="text-slate-700">
-        If you would like to talk to me about anything (even random things),{" "}
+        If you would like to talk to me about anything (even random things!),{" "}
         <a href="#">get in touch</a>.
       </p>
     </div>

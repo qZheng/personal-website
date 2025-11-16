@@ -7,6 +7,10 @@ import { usePathname } from "next/navigation";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { FaGithub, FaLink, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineDocumentText } from "react-icons/hi";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -46,7 +50,7 @@ export default function RootLayout({
 
           {/* content area */}
           <div className="relative h-full w-full overflow-y-auto px-6 py-8 md:px-12 md:py-10">
-            <div className="mx-auto flex h-full max-w-3xl gap-2">
+            <div className="mx-auto flex h-full max-w-[50rem] gap-2">
               {/* vertical nav */}
               <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-white px-4 py-5">
                 <nav className="space-y-8 text-sm text-slate-500">
@@ -91,6 +95,7 @@ export default function RootLayout({
                       target="_blank"
                       className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
+                      <FaGithub className="h-4 w-4" />
                       <span>Github</span>
                     </a>
                     <a
@@ -98,24 +103,28 @@ export default function RootLayout({
                       target="_blank"
                       className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
+                      <FaLinkedin className="h-4 w-4" />
                       <span>LinkedIn</span>
                     </a>
                     <a
                       href="mailto:hello@lucaszheng.net"
                       className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
+                      <HiOutlineMail className="h-4 w-4" />
                       <span>Email</span>
                     </a>
                     <a
-                      href="#"
+                      href="/Lucas_Zheng_Resume.pdf" 
+                      target="_blank"
                       className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
+                      <HiOutlineDocumentText className="h-4 w-4" />
                       <span>Resume</span>
                     </a>
                   </div>
                 </nav>
               </aside>
-              <main className="flex-1 max-w-3xl rounded-lg bg-white px-8 py-8">
+              <main className="flex-1 max-w-4xl rounded-lg bg-white px-8 py-8">
                 {children}
               </main>
             </div>
