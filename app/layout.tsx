@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="bg-white text-slate-900 overflow-hidden">
+      <body className="bg-white text-slate-700 overflow-hidden">
         {/* corner box */}
         <div className="fixed left-6 top-6 z-20">
           <div className="border border-slate-500 bg-white px-3 py-2">
@@ -55,8 +55,8 @@ export default function RootLayout({
                       href="/"
                       className={`block no-underline ${
                         pathname === "/" 
-                          ? "font-semibold text-slate-900" 
-                          : "text-slate-900 hover:text-slate-800"
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
                       }`}
                     >
                       Home
@@ -65,8 +65,8 @@ export default function RootLayout({
                       href="/about" 
                       className={`block no-underline ${
                         pathname === "/about" 
-                          ? "font-semibold text-slate-900" 
-                          : "text-slate-900 hover:text-slate-800"
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
                       }`}
                     >
                       About
@@ -75,8 +75,8 @@ export default function RootLayout({
                       href="/projects" 
                       className={`block no-underline ${
                         pathname === "/projects" 
-                          ? "font-semibold text-slate-900" 
-                          : "text-slate-900 hover:text-slate-800"
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
                       }`}
                     >
                       Projects
@@ -87,26 +87,28 @@ export default function RootLayout({
 
                   <div className="space-y-3">
                     <a
-                      href="#"
-                      className="flex items-center gap-3 no-underline hover:text-slate-800"
+                      href="https://www.github.com/qZheng"
+                      target="_blank"
+                      className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
                       <span>Github</span>
                     </a>
                     <a
-                      href="#"
-                      className="flex items-center gap-3 no-underline hover:text-slate-800"
+                      href="https://www.linkedin.com/in/lucas-q-zheng/"
+                      target="_blank"
+                      className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
                       <span>LinkedIn</span>
                     </a>
                     <a
-                      href="#"
-                      className="flex items-center gap-3 no-underline hover:text-slate-800"
+                      href="mailto:hello@lucaszheng.net"
+                      className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
                       <span>Email</span>
                     </a>
                     <a
                       href="#"
-                      className="flex items-center gap-3 no-underline hover:text-slate-800"
+                      className="flex items-center gap-3 no-underline hover:text-slate-600"
                     >
                       <span>Resume</span>
                     </a>

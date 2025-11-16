@@ -4,11 +4,11 @@ export default function ProjectsPage() {
   return (
     <div id="projects" className="max-w-3xl space-y-8">
       <p className="font-mono text-sm tracking-wide text-slate-500">
-        Lucas/Projects.md
+        /Projects.md
       </p>
 
       <h1 className="text-4xl md:text-3xl font-semibold leading-tight">
-        Projects
+        Some Projects
       </h1>
 
       <p className="text-slate-700">
