@@ -1,7 +1,11 @@
+"use client";
+
 export default function HomePage() {
   return (
     <div className="max-w-3xl space-y-8">
-      <p className="font-mono text-sm tracking-wide text-slate-500">/README.md</p>
+      <div className="flex justify-between items-center">
+        <p className="font-mono text-sm tracking-wide text-slate-500">/README.md</p>
+      </div>
 
       <img
         src="/images/latte_and_i.jpeg"
