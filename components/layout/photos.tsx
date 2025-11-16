@@ -135,26 +135,25 @@ export function PatternTwoHorizVert({
   onSelect,
 }: PatternTwoHorizVertProps) {
   return (
-    <div className="grid gap-2 md:grid-cols-[minmax(0,2fr)_minmax(0,1.7fr)]">
+    <div className="grid gap-2 md:grid-cols-[minmax(0,2fr)_minmax(0,1.7fr)] md:auto-rows-[1fr]">
       <PhotoThumb
         photo={top}
         onClick={() => onSelect(top)}
-        className="aspect-[16/9] md:col-start-1"
+        className="aspect-[16/9] md:col-start-1 md:row-start-1"
       />
       <PhotoThumb
         photo={bottom}
         onClick={() => onSelect(bottom)}
-        className="aspect-[16/9] md:col-start-1"
+        className="aspect-[16/9] md:col-start-1 md:row-start-2"
       />
       <PhotoThumb
         photo={vertical}
         onClick={() => onSelect(vertical)}
-        className="aspect-[3/4] md:aspect-auto md:row-span-2 md:h-full"
+        className="aspect-[3/4] md:aspect-auto md:col-start-2 md:row-span-2 md:row-start-1 md:h-full"
       />
     </div>
   );
 }
-
 type PatternSingleProps = {
   photo: Photo;
   onSelect: (photo: Photo) => void;

@@ -44,7 +44,7 @@ export default function RootLayout({
         {/* corner box */}
         <div className="fixed left-6 top-6 z-20">
           <div className="border border-slate-500 bg-white">
-            <a href="/"><img src="/images/initials_icon_black.svg" alt="LZ" className="w-11 h-11 block" /></a>
+            <a href="/"><img src="/images/initials_icon.svg" alt="LZ" className="w-11 h-11 block" /></a>
           </div>
         </div>
 

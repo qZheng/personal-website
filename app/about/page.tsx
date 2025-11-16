@@ -92,11 +92,11 @@ const liminalRoad: Photo = {
 const campingTrip: Photo = {
     src: "/photos/IMG_2586.PNG",
     alt: "",
-    caption: "Packing up camp in the pouring rain...",
+    caption: "So I had to put this one in here, the aftermath of the trip we now call \"The Camping Trip of Despair and Misfortune\". Packing up camp in the pouring rain to finish it off.",
   };
   
 const CatAndI: Photo = {
-    src: "/photos/IMG_3884.PNG",
+    src: "/photos/IMG_3884.JPG",
     alt: "",
     caption: "My cat likes sitting on me...",
   };
@@ -186,13 +186,30 @@ const CatAndI: Photo = {
         </p>
 
         <div className="space-y-2">
+          <PatternSingle photo={oakvilleSunset} onSelect={setActivePhoto} />
           <PatternTwoLandscapes
-            photos={[singingSandsSunset, oakvilleSunset]}
+            photos={[singingSandsSunset, foggyNight]}
             onSelect={setActivePhoto}
           />
-           <PatternSingle photo={nightSky} onSelect={setActivePhoto} />
-
-
+          <PatternSingle photo={nightSky} onSelect={setActivePhoto} />
+          <PatternTwoHorizVert
+            vertical={foggyNight2}
+            top={kayaks}
+            bottom={lightPainting}
+            onSelect={setActivePhoto}
+          />
+          <PatternVertTwoHoriz
+            vertical={CatAndI}
+            top={sunrise}
+            bottom={liminalRoad}
+            onSelect={setActivePhoto}
+          />
+          <PatternTwoHorizVert
+            vertical={bird}
+            top={latte3}
+            bottom={latte4}
+            onSelect={setActivePhoto}
+          />
           <PatternVertTwoHoriz
             vertical={latte1}
             top={momAndDadAndKitty}
@@ -205,16 +222,10 @@ const CatAndI: Photo = {
             photos={[nightSky2, friends2]}
             onSelect={setActivePhoto}
           />
-          <PatternVertTwoHoriz
-            vertical={friends}
-            top={kayaks}
-            bottom={latte2}
-            onSelect={setActivePhoto}
-          />
           <PatternTwoHorizVert
-            vertical={friends}
-            top={kayaks}
-            bottom={latte2}
+            vertical={latte5}
+            top={morningDew}
+            bottom={campingTrip}
             onSelect={setActivePhoto}
           />
 
