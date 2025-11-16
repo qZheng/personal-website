@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div id="about" className="max-w-3xl space-y-8">
       <p className="font-mono text-sm tracking-wide text-slate-500">
-        /About.md
+        /ABOUT.md
       </p>
 
       <h1 className="text-4xl md:text-3xl font-semibold leading-tight">

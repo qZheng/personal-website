@@ -5,6 +5,10 @@
   --foreground: #0f172a;
 }
 
+@theme {
+  --breakpoint-sm: 580px;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -34,7 +38,7 @@
   .bg-dot-grid {
     background-color: white;
     background-image: radial-gradient(circle, rgba(53, 53, 53, 0.34) 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-size: 22px 22px;
     background-position: 0 0;
   }
 }

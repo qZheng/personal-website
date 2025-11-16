@@ -1,5 +1,3 @@
-// app/page.tsx
-
 export default function HomePage() {
   return (
     <div className="max-w-3xl space-y-8">
@@ -8,7 +6,7 @@ export default function HomePage() {
       <img
         src="/images/latte_and_i.jpeg"
         alt="Lucas Zheng"
-        className="w-32 h-32 object-cover rounded-lg shadow-sm float-right ml-6 mb-2"
+        className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
       />
       <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
 

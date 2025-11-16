@@ -11,6 +11,8 @@ import { FaGithub, FaLink, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
+import initials_icon_black from "./images/initials_icon_black.svg";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,6 +28,8 @@ export const metadata: Metadata = {
   description: "Personal website I guess",
 }; */
 
+
+
 export default function RootLayout({
   children,
 }: {
@@ -35,22 +39,25 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <link rel="icon" href="/images/initials_icon.svg" type="image/svg+xml" />
+      </head>
       <body className="bg-white text-slate-700 overflow-hidden">
         {/* corner box */}
         <div className="fixed left-6 top-6 z-20">
-          <div className="border border-slate-500 bg-white px-3 py-2">
-            <span className="font-semibold text-lg leading-none">LZ</span>
+          <div className="border border-slate-500 bg-white">
+            <a href="/"><img src="/images/initials_icon.svg" alt="LZ" className="w-11 h-11 block" /></a>
           </div>
         </div>
 
         {/* main framed container */}
-        <div className="fixed inset-6 z-10 border border-slate-300 bg-white overflow-hidden">
+        <div className="fixed inset-6 z-10 border border-slate-300 bg-white overflow-hidden flex flex-col">
           {/* dotted background */}
-          <div aria-hidden className="absolute inset-0 bg-dot-grid" />
+          <div aria-hidden className="absolute inset-0 bg-dot-grid pointer-events-none" />
 
           {/* content area */}
-          <div className="relative h-full w-full overflow-y-auto px-6 py-8 md:px-12 md:py-10">
-            <div className="mx-auto flex h-full max-w-[50rem] gap-2">
+          <div className="relative flex-1 w-full overflow-y-auto px-4 py-6 md:px-12 md:py-10">
+            <div className="mx-auto flex flex-col md:flex-row max-w-[50rem] gap-2">
               {/* vertical nav */}
               <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-white px-4 py-5">
                 <nav className="space-y-8 text-sm text-slate-500">
@@ -66,16 +73,6 @@ export default function RootLayout({
                       Home
                     </Link>
                     <Link 
-                      href="/about" 
-                      className={`block no-underline ${
-                        pathname === "/about" 
-                          ? "font-semibold text-slate-700" 
-                          : "text-slate-700 hover:text-slate-600"
-                      }`}
-                    >
-                      About
-                    </Link>
-                    <Link 
                       href="/projects" 
                       className={`block no-underline ${
                         pathname === "/projects" 
@@ -85,6 +82,17 @@ export default function RootLayout({
                     >
                       Projects
                     </Link>
+                    <Link 
+                      href="/about" 
+                      className={`block no-underline ${
+                        pathname === "/about" 
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
+                      }`}
+                    >
+                      About
+                    </Link>
+
                   </div>
 
                   <div className="h-px bg-slate-200" />
