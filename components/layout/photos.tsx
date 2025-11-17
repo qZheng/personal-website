@@ -45,12 +45,12 @@ export function PatternTwoLandscapes({
       <PhotoThumb
         photo={left}
         onClick={() => onSelect(left)}
-        className="aspect-[16/9]"
+        className="aspect-video"
       />
       <PhotoThumb
         photo={right}
         onClick={() => onSelect(right)}
-        className="aspect-[16/9]"
+        className="aspect-video"
       />
     </div>
   );
@@ -71,17 +71,17 @@ export function PatternThreeVerticals({
       <PhotoThumb
         photo={p1}
         onClick={() => onSelect(p1)}
-        className="aspect-[3/4]"
+        className="aspect-3/4"
       />
       <PhotoThumb
         photo={p2}
         onClick={() => onSelect(p2)}
-        className="aspect-[3/4]"
+        className="aspect-3/4"
       />
       <PhotoThumb
         photo={p3}
         onClick={() => onSelect(p3)}
-        className="aspect-[3/4]"
+        className="aspect-3/4"
       />
     </div>
   );
@@ -105,17 +105,17 @@ export function PatternVertTwoHoriz({
       <PhotoThumb
         photo={vertical}
         onClick={() => onSelect(vertical)}
-        className="aspect-[3/4] md:aspect-auto md:row-span-2 md:h-full"
+        className="aspect-3/4 md:aspect-auto md:row-span-2 md:h-full"
       />
       <PhotoThumb
         photo={top}
         onClick={() => onSelect(top)}
-        className="aspect-[16/9] md:col-start-2"
+        className="aspect-video md:col-start-2"
       />
       <PhotoThumb
         photo={bottom}
         onClick={() => onSelect(bottom)}
-        className="aspect-[16/9] md:col-start-2"
+        className="aspect-video md:col-start-2"
       />
     </div>
   );
@@ -139,17 +139,17 @@ export function PatternTwoHorizVert({
       <PhotoThumb
         photo={top}
         onClick={() => onSelect(top)}
-        className="aspect-[16/9] md:col-start-1 md:row-start-1"
+        className="aspect-video md:col-start-1 md:row-start-1"
       />
       <PhotoThumb
         photo={bottom}
         onClick={() => onSelect(bottom)}
-        className="aspect-[16/9] md:col-start-1 md:row-start-2"
+        className="aspect-video md:col-start-1 md:row-start-2"
       />
       <PhotoThumb
         photo={vertical}
         onClick={() => onSelect(vertical)}
-        className="aspect-[3/4] md:aspect-auto md:col-start-2 md:row-span-2 md:row-start-1 md:h-full"
+        className="aspect-3/4 md:aspect-auto md:col-start-2 md:row-span-2 md:row-start-1 md:h-full"
       />
     </div>
   );
@@ -165,7 +165,7 @@ export function PatternSingle({ photo, onSelect }: PatternSingleProps) {
       <PhotoThumb
         photo={photo}
         onClick={() => onSelect(photo)}
-        className="aspect-[16/9]"
+        className="aspect-video"
       />
     </div>
   );

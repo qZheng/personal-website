@@ -55,7 +55,7 @@ export default function RootLayout({
 
           {/* content area */}
           <div className="relative flex-1 w-full overflow-y-auto px-4 py-6 md:px-12 md:py-10">
-            <div className="mx-auto flex flex-col md:flex-row max-w-[52rem] gap-2">
+            <div className="mx-auto flex flex-col md:flex-row max-w-208 gap-2">
               {/* vertical nav */}
               <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-white px-4 py-5">
                 <nav className="space-y-8 text-sm text-slate-500">

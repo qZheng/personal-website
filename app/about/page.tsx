@@ -83,26 +83,24 @@ export default function AboutPage() {
     caption: "Light painting Highway 407",
   };
 
-const liminalRoad: Photo = {
+ const liminalRoad: Photo = {
     src: "/photos/_DSC9812.JPG",
     alt: "",
     caption: "A road to nowhere...",
   };
 
-const campingTrip: Photo = {
+ const campingTrip: Photo = {
     src: "/photos/IMG_2586.PNG",
     alt: "",
     caption: "So I had to put this one in here, the aftermath of the trip we now call \"The Camping Trip of Despair and Misfortune\". Packing up camp in the pouring rain to finish it off.",
   };
   
-const CatAndI: Photo = {
+ const CatAndI: Photo = {
     src: "/photos/IMG_3884.JPG",
     alt: "",
     caption: "My cat likes sitting on me...",
   };
   
-  
-
   const momAndDadAndKitty: Photo = {
     src: "/photos/DSC02256.PNG",
     alt: "Photo of mom and dad with the cat",
@@ -121,7 +119,6 @@ const CatAndI: Photo = {
     caption: "A beautiful sunset caught in downtown Oakville.",
   };
 
-
   const latte1: Photo = {
     src: "/photos/DSC02292.JPG",
     alt: "Cat",
@@ -139,6 +136,7 @@ const CatAndI: Photo = {
     alt: "Friends",
     caption: "A nice photo of some of my friends during a cottage trip.",
   };
+
   const friends2: Photo = {
     src: "/photos/DSC02614.JPG",
     alt: "Friends",
@@ -156,6 +154,7 @@ const CatAndI: Photo = {
     alt: "Red tree, night sky",
     caption: "Accidentally light painted this tree after a friend didn't turn off her flashlight.",
   };
+
   const kayaks: Photo = {
     src: "/photos/DSC02656.JPG",
     alt: "Kayaks on a lake",
@@ -181,8 +180,7 @@ const CatAndI: Photo = {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold leading-tight">Some photos.</h2>
         <p className="text-slate-700 text-sm">
-          A few photos I&apos;ve taken recently. Click any of them to see a
-          larger version.
+          A few photos that I think are pretty neat! Click any of them to see a larger version.
         </p>
 
         <div className="space-y-2">
@@ -232,7 +230,7 @@ const CatAndI: Photo = {
         </div>
       </section>
 
-      <h2 className="text-2xl font-semibold leading-tight">Music!</h2>
+      <h2 className="text-2xl font-semibold leading-tight">Music - lastfm api to-do...</h2>
       {/* to-do - lastfm api */}
 
       {/* lightbox */}
@@ -242,13 +240,13 @@ const CatAndI: Photo = {
           onClick={() => setActivePhoto(null)}
         >
           <div
-            className="relative w-full max-w-3xl rounded-xl bg-white p-4 shadow-lg"
+            className="relative w-full max-w-4xl rounded-xl bg-white p-4 shadow-lg"
             onClick={(event) => event.stopPropagation()}
           >
             <button
               type="button"
               aria-label="Close photo"
-              className="absolute right-3 top-3 text-2xl leading-none text-slate-500 hover:text-slate-800"
+              className="absolute right-3 top-3 w-8 h-8 flex items-center justify-center rounded-full bg-white/70 text-2xl leading-none text-slate-700 hover:text-slate-900 hover:bg-white/70"
               onClick={() => setActivePhoto(null)}
             >
               &times;

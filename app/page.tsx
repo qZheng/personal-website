@@ -1,6 +1,10 @@
 "use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 export default function HomePage() {
+  const pathname = usePathname();
   return (
     <div className="max-w-3xl space-y-8">
       <div className="flex justify-between items-center">
@@ -16,12 +20,28 @@ export default function HomePage() {
 
       <p className="text-slate-700">
         A 2nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
-        </a> Amateur <a>photographer.</a> 
+        </a> Amateur <Link 
+                      href="/about" 
+                      className={`${
+                        pathname === "/about" 
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
+                      }`}
+                    >photographer.
+                    </Link>
         {/* todo add random photo on hover */}
       </p>
       <ul className="list-disc pl-5 space-y-2 text-slate-700">
         <li>
-          <span className="font-semibold"><a href="/projects">See my projects.</a></span> I'm interested in data science and deep learning models.
+          <span className="font-semibold"><Link 
+                      href="/projects" 
+                      className={`${
+                        pathname === "/projects" 
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
+                      }`}
+                    >See my projects.
+                    </Link></span> I'm interested in data science and deep learning models.
         </li>
         <li>
           <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Summer 2026 internships!
