@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   Photo,
-  PatternTwoLandscapes,
+  PatternTwoLandscapesWide,
 } from "../../components/layout/photos";
 
 
@@ -30,11 +30,18 @@ export default function ProjectsPage() {
       document.body.style.overflow = originalOverflow;
     };
   }, [activePhoto]);
-  const singingSandsSunset: Photo = {
-    src: "/photos/DSC01923.PNG",
-    alt: "Sunset at Singing Sands beach in Tobermory.",
+  const loss_curve: Photo = {
+    src: "/images/loss_curve.png",
+    alt: "Loss curve.",
     caption: "Caught this one during a camping trip with my friends at Bruce Peninsula National Park. ",
   };
+
+  const pred_vs_actual: Photo = {
+    src: "/images/pred_vs_actual.png",
+    alt: "Predicted prices vs actual",
+    caption: "Predicted prices plotted against actual. R^2 = 0.45",
+
+  }
   const morningDew: Photo = {
     src: "/photos/_DSC0465.JPG",
     alt: "",
@@ -59,20 +66,22 @@ export default function ProjectsPage() {
         <div className="border-l-2 border-slate-300 pl-6">
           <h3 className="text-xl font-semibold text-slate-900">Toronto Airbnb Linear Regression Model Price Predictor</h3>
           <p className="text-sm text-slate-500 mt-1 mb-2 ">Technologies: Python, PyTorch, scikit-learn, NumPy, Matplotlib </p>
-          <PatternTwoLandscapes
-            photos={[singingSandsSunset, morningDew]}
+          <PatternTwoLandscapesWide
+            photos={[loss_curve, pred_vs_actual]}
             onSelect={setActivePhoto}
           />
           <p className="text-slate-700 mt-3">
-            You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive
+            This is my work with Torch and scikit to build a linear regression model that predicts Toronto Airbnb nightly prices.
+
+The model was trained locally on an M4 Pro MacBook Pro using the Apple MPS backend for PyTorch acceleration. After cleaning the dataset, the script split the data into: Train: 10,866 rows Validation: 2,330 rows Test: 2,329 rows Training stopped automatically at epoch 106 due to early-stopping on validation loss. Final evaluation on the test set gave the following metrics (on the original $ scale): MAE $56.01 RMSE $101.75 R^2 0.4565
           </p>
         </div>
 
         <div className="border-l-2 border-slate-300 pl-6">
           <h3 className="text-xl font-semibold text-slate-900">TrailSense</h3>
           <p className="text-sm text-slate-500 mt-1 mb-2 ">Technologies: Typescript, Python, Node.js, Flask, TwelveLabs Pegasus/Marengo</p>
-          <PatternTwoLandscapes
-            photos={[singingSandsSunset, morningDew]}
+          <PatternTwoLandscapesWide
+            photos={[loss_curve, morningDew]}
             onSelect={setActivePhoto}
           />
           <p className="text-slate-700 mt-3">
@@ -83,8 +92,8 @@ export default function ProjectsPage() {
         <div className="border-l-2 border-slate-300 pl-6">
           <h3 className="text-xl font-semibold text-slate-900">Syllabuddy</h3>
           <p className="text-sm text-slate-500 mt-1 mb-2 ">Technologies: Typescript, Python, Next.js, Flask, MongoDB</p>
-          <PatternTwoLandscapes
-            photos={[singingSandsSunset, morningDew]}
+          <PatternTwoLandscapesWide
+            photos={[loss_curve, morningDew]}
             onSelect={setActivePhoto}
           />
           <p className="text-slate-700 mt-3">
@@ -94,12 +103,8 @@ export default function ProjectsPage() {
         <div className="border-l-2 border-slate-300 pl-6">
           <h3 className="text-xl font-semibold text-slate-900">Personal Website</h3>
           <p className="text-sm text-slate-500 mt-1 mb-2 ">Technologies: Typescript, Next.js, Tailwind CSS</p>
-          <PatternTwoLandscapes
-            photos={[singingSandsSunset, morningDew]}
-            onSelect={setActivePhoto}
-          />
           <p className="text-slate-700 mt-3">
-            You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive
+            You're seeing it right now!
           </p>
         </div>
       </div>

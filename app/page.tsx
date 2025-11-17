@@ -1,6 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { HiLocationMarker } from "react-icons/hi";
+import TypingText from "../components/ui/TypingText";
+
 
 
 export default function HomePage() {
@@ -14,9 +17,17 @@ export default function HomePage() {
       <img
         src="/images/latte_and_i.jpeg"
         alt="Lucas Zheng"
-        className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
+        className="mr-2 w-20 h-20 sm:w-28 sm:h-28 md:w-33 md:h-33 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
       />
-      <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
+      <div className="space-y-0">
+        <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
+        <p className="mt-0 flex items-center gap-1 text-sm text-slate-600">
+          <HiLocationMarker className="h-4 w-4" />
+          <TypingText text="Burlington, ON" speed={110}></TypingText>
+{/*           <span>Burlington, ON</span>
+          <span className="caret"></span> */}
+        </p>
+      </div>
 
       <p className="text-slate-700">
         A 2nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.

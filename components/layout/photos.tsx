@@ -24,7 +24,7 @@ function PhotoThumb({ photo, onClick, className = "" }: PhotoThumbProps) {
         alt={photo.alt}
         fill
         sizes="(min-width: 768px) 33vw, 100vw"
-        className="object-cover transition-transform duration-200 group-hover:scale-105"
+        className="object-cover transition-transform duration-200 group-hover:scale-102"
       />
     </button>
   );
@@ -51,6 +51,32 @@ export function PatternTwoLandscapes({
         photo={right}
         onClick={() => onSelect(right)}
         className="aspect-video"
+      />
+    </div>
+  );
+}
+
+type PatternTwoLandscapesWideProps = {
+  photos: [Photo, Photo];
+  onSelect: (photo: Photo) => void;
+};
+
+export function PatternTwoLandscapesWide({
+  photos,
+  onSelect,
+}: PatternTwoLandscapesWideProps) {
+  const [left, right] = photos;
+  return (
+    <div className="grid gap-2 md:grid-cols-2">
+      <PhotoThumb
+        photo={left}
+        onClick={() => onSelect(left)}
+        className="aspect-3/2"
+      />
+      <PhotoThumb
+        photo={right}
+        onClick={() => onSelect(right)}
+        className="aspect-3/2"
       />
     </div>
   );
