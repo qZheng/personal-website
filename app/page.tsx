@@ -52,14 +52,14 @@ export default function HomePage() {
                           : "text-slate-700 hover:text-slate-600"
                       }`}
                     >See my projects.
-                    </Link></span> I'm interested in data science and deep learning models.
+                    </Link></span> I'm interested in full-stack development and data science.
         </li>
         <li>
           <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Summer 2026 internships!
         </li>
       </ul>
       <p>
-        While not tackling LeetCode problems, I'm probably tackling the local trails on my mountain bike. I also love reading sci-fi/fantasy books, play the guitar, and have a cat named Latte and a sister who was fortunately not named Latte.
+        While not tackling LeetCode problems, I'm probably tackling the local trails on my mountain bike. I also love reading sci-fi/fantasy books, play the guitar, have a cat named Latte, and a sister who was fortunately not named Latte.
       </p>
 
 

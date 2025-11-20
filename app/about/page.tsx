@@ -98,7 +98,7 @@ export default function AboutPage() {
  const CatAndI: Photo = {
     src: "/photos/IMG_3884.JPG",
     alt: "",
-    caption: "My cat likes sitting on me...",
+    caption: "Took this one after the cat jumped on me to sit on my lap while I was minding my own business.",
   };
   
   const momAndDadAndKitty: Photo = {
@@ -128,25 +128,25 @@ export default function AboutPage() {
   const latte2: Photo = {
     src: "/photos/DSC02719.JPG",
     alt: "The cat sleeping on my dad",
-    caption: "Funny side eye... Latte loves sleeping on us."
+    caption: "That side eye... Latte loves sleeping on us."
   }
 
   const friends: Photo = {
     src: "/photos/DSC02582.JPG",
     alt: "Friends",
-    caption: "A nice photo of some of my friends during a cottage trip.",
+    caption: "Some of my friends during a cottage trip.",
   };
 
   const friends2: Photo = {
     src: "/photos/DSC02614.JPG",
     alt: "Friends",
-    caption: "A nice photo of some of my friends during a cottage trip.",
+    caption: "Some of my friends during a cottage trip.",
   };
 
   const nightSky: Photo = {
     src: "/photos/DSC02630.JPG",
     alt: "Night sky",
-    caption: "Meteors caught during the Perseids meteor shower.",
+    caption: "Meteors caught during the Perseids meteor shower (and the big dipper!)",
   };
 
   const nightSky2: Photo = {
@@ -158,7 +158,7 @@ export default function AboutPage() {
   const kayaks: Photo = {
     src: "/photos/DSC02656.JPG",
     alt: "Kayaks on a lake",
-    caption: "After pulling an all nighter in the hot tub, we decided to go out onto the kayaks to watch the sunrise and I brought my camera...",
+    caption: "After an all nighter in the jacuzzi, I brought my camera when we decided to go out onto the kayaks to watch the sunrise.",
   };
 
 
@@ -180,7 +180,7 @@ export default function AboutPage() {
       <section className="space-y-6">
         <h2 className="text-2xl font-semibold leading-tight">Some photos.</h2>
         <p className="text-slate-700 text-sm">
-          A few photos that I think are pretty neat! Click any of them to see a larger version.
+          A few photos that I think are pretty neat! Click on any of them to see a larger version and a caption.
         </p>
 
         <div className="space-y-2">
