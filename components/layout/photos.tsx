@@ -41,7 +41,7 @@ export function PatternTwoLandscapes({
 }: PatternTwoLandscapesProps) {
   const [left, right] = photos;
   return (
-    <div className="grid gap-2 md:grid-cols-2">
+    <div className="grid grid-cols-2 gap-2 md:grid-cols-2">
       <PhotoThumb
         photo={left}
         onClick={() => onSelect(left)}
@@ -67,7 +67,7 @@ export function PatternTwoLandscapesWide({
 }: PatternTwoLandscapesWideProps) {
   const [left, right] = photos;
   return (
-    <div className="grid gap-2 md:grid-cols-2">
+    <div className="grid grid-cols-2 gap-2 md:grid-cols-2">
       <PhotoThumb
         photo={left}
         onClick={() => onSelect(left)}
@@ -127,11 +127,11 @@ export function PatternVertTwoHoriz({
   onSelect,
 }: PatternVertTwoHorizProps) {
   return (
-    <div className="grid gap-2 md:grid-cols-[minmax(0,1.7fr)_minmax(0,2fr)]">
+    <div className="grid gap-2 grid-cols-[minmax(0,1.7fr)_minmax(0,2fr)] auto-rows-[1fr]">
       <PhotoThumb
         photo={vertical}
         onClick={() => onSelect(vertical)}
-        className="aspect-3/4 md:aspect-auto md:row-span-2 md:h-full"
+        className="row-span-2 h-full"
       />
       <PhotoThumb
         photo={top}
@@ -161,21 +161,21 @@ export function PatternTwoHorizVert({
   onSelect,
 }: PatternTwoHorizVertProps) {
   return (
-    <div className="grid gap-2 md:grid-cols-[minmax(0,2fr)_minmax(0,1.7fr)] md:auto-rows-[1fr]">
+    <div className="grid gap-2 grid-cols-[minmax(0,2fr)_minmax(0,1.7fr)] auto-rows-[1fr]">
       <PhotoThumb
         photo={top}
         onClick={() => onSelect(top)}
-        className="aspect-video md:col-start-1 md:row-start-1"
+        className="aspect-video col-start-1 row-start-1"
       />
       <PhotoThumb
         photo={bottom}
         onClick={() => onSelect(bottom)}
-        className="aspect-video md:col-start-1 md:row-start-2"
+        className="aspect-video col-start-1 row-start-2"
       />
       <PhotoThumb
         photo={vertical}
         onClick={() => onSelect(vertical)}
-        className="aspect-3/4 md:aspect-auto md:col-start-2 md:row-span-2 md:row-start-1 md:h-full"
+        className="col-start-2 row-span-2 row-start-1 h-full"
       />
     </div>
   );

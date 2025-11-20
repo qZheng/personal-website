@@ -61,7 +61,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div id="projects" className="max-w-3xl space-y-8">
+    <div id="projects" className="max-w-3xl space-y-[1.65rem]">
       <p className="font-mono text-sm tracking-wide text-slate-500">
         Projects/README.md
       </p>

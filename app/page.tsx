@@ -9,15 +9,15 @@ import TypingText from "../components/ui/TypingText";
 export default function HomePage() {
   const pathname = usePathname();
   return (
-    <div className="max-w-3xl space-y-8">
+    <div className="max-w-3xl space-y-[1.65rem]">
       <div className="flex justify-between items-center">
-        <p className="font-mono text-sm tracking-wide text-slate-500">Home/README.md</p>
+        <p className="font-mono text-sm tracking-wide text-slate-500">~/README.md</p>
       </div>
 
       <img
         src="/images/latte_and_i.jpeg"
         alt="Lucas Zheng"
-        className="mr-2 w-20 h-20 sm:w-28 sm:h-28 md:w-33 md:h-33 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
+        className="mr-2 w-28 h-28 md:w-33 md:h-33 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
       />
       <div className="space-y-0">
         <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
@@ -64,8 +64,8 @@ export default function HomePage() {
 
 
       <p className="text-slate-700">
-        If you would like to talk to me about anything (even random things!),{" "}
-        <a href="#">get in touch</a>.
+        If you would like to talk to me about anything (even random things!) reach me at:{" "}
+        <a href="mailto:lucas@qzheng.ca">lucas@qzheng.ca</a>.
       </p>
     </div>
   );
