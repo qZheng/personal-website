@@ -62,12 +62,12 @@ export default function ProjectsPage() {
 
   return (
     <div id="projects" className="max-w-3xl space-y-[1.65rem]">
-      <p className="font-mono text-sm tracking-wide text-slate-500">
+{/*       <p className="font-mono text-sm tracking-wide text-slate-500">
         Projects/README.md
-      </p>
+      </p> */}
 
       <h1 className="text-4xl md:text-3xl font-semibold leading-tight">
-        Interesting Projects
+        Projects
       </h1>
 
       <p className="text-slate-700">

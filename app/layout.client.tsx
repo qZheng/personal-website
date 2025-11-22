@@ -43,13 +43,13 @@ export default function RootLayout({
       <body className="bg-white text-slate-700 overflow-hidden">
         {/* corner box */}
         <div className="fixed left-6 top-6 z-20">
-          <div className="border border-slate-500 bg-white">
+          <div className="border [border-color:rgba(53,53,53,0.64)] bg-white">
             <a href="/"><img src="/images/initials_icon.svg" alt="LZ" className="w-11 h-11 block" /></a>
           </div>
         </div>
 
         {/* main framed container */}
-        <div className="fixed inset-6 z-10 border border-slate-300 bg-white overflow-hidden flex flex-col">
+        <div className="fixed inset-6 z-10 border [border-color:rgba(53,53,53,0.64)] bg-white overflow-hidden flex flex-col">
           {/* dotted background */}
           <div aria-hidden className="absolute inset-0 bg-dot-grid pointer-events-none" />
 
@@ -57,12 +57,12 @@ export default function RootLayout({
           <div className="relative flex-1 w-full overflow-y-auto px-0 py-0 md:px-12 md:py-10">
             <div className="mx-auto flex flex-col md:flex-row max-w-208 gap-2">
               {/* vertical nav */}
-              <nav className="flex md:hidden mt-2 mr-3 justify-end items-center mb-4 text-sm text-slate-600">
-                <div className="flex gap-4">
+              <nav className="flex md:hidden mt-2 mr-3 justify-end items-center mb-4 text-sm text-slate-600 ">
+                <div className="flex gap-4 bg-[#fdf5fa] mx-1 px-0 py-1">
                   <Link
                     href="/"
                     className={`no-underline ${pathname === "/"
-                      ? "font-semibold text-slate-700"
+                      ? "font-semibold text-slate-800"
                       : "text-slate-700 hover:text-slate-600"
                       }`}
                   >
@@ -71,8 +71,8 @@ export default function RootLayout({
                   <Link
                     href="/projects"
                     className={`no-underline ${pathname === "/projects"
-                      ? "font-semibold text-slate-700"
-                      : "text-slate-700 hover:text-slate-600"
+                      ? "font-semibold text-slate-800"
+                      : "text-slate-800 hover:text-slate-700"
                       }`}
                   >
                     Projects
@@ -80,22 +80,22 @@ export default function RootLayout({
                   <Link
                     href="/about"
                     className={`no-underline ${pathname === "/about"
-                      ? "font-semibold text-slate-700"
-                      : "text-slate-700 hover:text-slate-600"
+                      ? "font-semibold text-slate-800"
+                      : "text-slate-800 hover:text-slate-700"
                       }`}
                   >
                     Life
                   </Link>
                 </div>
               </nav>
-              <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-white px-4 py-5">
+              <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-[#fdf5fa] px-4 py-8">
                 <nav className="space-y-8 text-sm text-slate-500">
                   <div className="space-y-3">
                     <Link
                       href="/"
                       className={`block no-underline ${pathname === "/"
-                        ? "font-semibold text-slate-700"
-                        : "text-slate-700 hover:text-slate-600"
+                        ? "font-semibold text-slate-800"
+                        : "text-slate-800 hover:text-slate-700"
                         }`}
                     >
                       Home
@@ -103,8 +103,8 @@ export default function RootLayout({
                     <Link
                       href="/projects"
                       className={`block no-underline ${pathname === "/projects"
-                        ? "font-semibold text-slate-700"
-                        : "text-slate-700 hover:text-slate-600"
+                        ? "font-semibold text-slate-800"
+                        : "text-slate-800 hover:text-slate-700"
                         }`}
                     >
                       Projects
@@ -112,8 +112,8 @@ export default function RootLayout({
                     <Link
                       href="/about"
                       className={`block no-underline ${pathname === "/about"
-                        ? "font-semibold text-slate-700"
-                        : "text-slate-700 hover:text-slate-600"
+                        ? "font-semibold text-slate-800"
+                        : "text-slate-800 hover:text-slate-700"
                         }`}
                     >
                       Life outside of coding
@@ -127,7 +127,7 @@ export default function RootLayout({
                     <a
                       href="https://www.github.com/qZheng"
                       target="_blank"
-                      className="flex items-center gap-3 no-underline hover:text-slate-600"
+                      className="flex items-center gap-3 no-underline text-slate-800 hover:text-slate-700"
                     >
                       <FaGithub className="h-4 w-4" />
                       <span>Github</span>
@@ -135,14 +135,14 @@ export default function RootLayout({
                     <a
                       href="https://www.linkedin.com/in/lucas-q-zheng/"
                       target="_blank"
-                      className="flex items-center gap-3 no-underline hover:text-slate-600"
+                      className="flex items-center gap-3 no-underline text-slate-800 hover:text-slate-700"
                     >
                       <FaLinkedin className="h-4 w-4" />
                       <span>LinkedIn</span>
                     </a>
                     <a
                       href="mailto:hello@lucaszheng.net"
-                      className="flex items-center gap-3 no-underline hover:text-slate-600"
+                      className="flex items-center gap-3 no-underline text-slate-800 hover:text-slate-700"
                     >
                       <HiOutlineMail className="h-4 w-4" />
                       <span>Email</span>
@@ -150,7 +150,7 @@ export default function RootLayout({
                     <a
                       href="/Lucas_Zheng_Resume.pdf"
                       target="_blank"
-                      className="flex items-center gap-3 no-underline hover:text-slate-600"
+                      className="flex items-center gap-3 no-underline text-slate-800 hover:text-slate-700"
                     >
                       <HiOutlineDocumentText className="h-4 w-4" />
                       <span>Resume</span>
@@ -158,14 +158,14 @@ export default function RootLayout({
                   </div>
                 </nav>
               </aside>
-              <main className="flex-1 max-w-4xl rounded-lg bg-white px-8 py-8">
+              <main className="flex-1 max-w-4xl rounded-lg bg-[#fdf5fa] px-4 md:px-8 py-4 md:py-10">
                 {children}
               </main>
-              <div className="mt-6 flex md:hidden justify-center gap-5 text-slate-500 text-sm">
+              <div className="flex md:hidden justify-center gap-5 text-slate-800 text-sm bg-[#fdf5fa] rounded-lg px-4 py-2">
                 <a
                   href="https://www.github.com/qZheng"
                   target="_blank"
-                  className="flex items-center gap-2 no-underline hover:text-slate-600"
+                  className="flex items-center gap-2 no-underline hover:text-slate-700"
                 >
                   <FaGithub className="h-4 w-4" />
                   <span>Github</span>
@@ -173,7 +173,7 @@ export default function RootLayout({
                 <a
                   href="https://www.linkedin.com/in/lucas-q-zheng/"
                   target="_blank"
-                  className="flex items-center gap-2 no-underline hover:text-slate-600"
+                  className="flex items-center gap-2 no-underline hover:text-slate-700"
                 >
                   <FaLinkedin className="h-4 w-4" />
                   <span>LinkedIn</span>
