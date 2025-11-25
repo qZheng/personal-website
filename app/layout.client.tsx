@@ -40,10 +40,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/initials_icon_black.svg" type="image/svg+xml" />
       </head>
-      <body className="bg-white text-slate-700 overflow-hidden">
+      <body className="bg-[#fefdfc] text-slate-700 overflow-hidden">
         {/* corner box */}
         <div className="fixed left-6 top-6 z-20">
-          <div className="border [border-color:rgba(53,53,53,0.64)] bg-white">
+          <div className="border [border-color:rgba(53,53,53,0.64)] bg-[#fefdfc]">
             <a href="/"><img src="/images/initials_icon.svg" alt="LZ" className="w-11 h-11 block" /></a>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function RootLayout({
             <div className="mx-auto flex flex-col md:flex-row max-w-208 gap-2">
               {/* vertical nav */}
               <nav className="flex md:hidden mt-2 mr-3 justify-end items-center mb-4 text-sm text-slate-600 ">
-                <div className="flex gap-4 bg-[#fdf5fa] mx-1 px-0 py-1">
+                <div className="flex gap-4 bg-[#fefdfc] mx-1 px-0 py-1">
                   <Link
                     href="/"
                     className={`no-underline ${pathname === "/"
@@ -88,7 +88,7 @@ export default function RootLayout({
                   </Link>
                 </div>
               </nav>
-              <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-[#fdf5fa] px-4 py-8">
+              <aside className="hidden md:flex w-30 shrink-0 flex-col justify-between rounded-lg bg-[#fefdfc] px-4 py-8">
                 <nav className="space-y-8 text-sm text-slate-500">
                   <div className="space-y-3">
                     <Link
@@ -158,10 +158,10 @@ export default function RootLayout({
                   </div>
                 </nav>
               </aside>
-              <main className="flex-1 max-w-4xl rounded-lg bg-[#fdf5fa] px-4 md:px-8 py-4 md:py-10">
+              <main className="flex-1 max-w-4xl rounded-lg bg-[#fefdfc] px-4 md:px-8 py-4 md:py-10">
                 {children}
               </main>
-              <div className="flex md:hidden justify-center gap-5 text-slate-800 text-sm bg-[#fdf5fa] rounded-lg px-4 py-2">
+              <div className="flex md:hidden justify-center gap-5 text-slate-800 text-sm bg-[#fefdfc] rounded-lg px-4 py-2">
                 <a
                   href="https://www.github.com/qZheng"
                   target="_blank"

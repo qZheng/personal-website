@@ -269,3 +269,6 @@ export default function AboutPage() {
     </div>
   );
 }
+
+// 4754
+//             className="relative w-full max-w-4xl rounded-xl bg-white p-4 shadow-lg"
