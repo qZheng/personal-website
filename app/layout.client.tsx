@@ -42,14 +42,14 @@ export default function RootLayout({
       </head>
       <body className="bg-[#fefdfc] text-slate-700 overflow-hidden">
         {/* corner box */}
-        <div className="fixed left-6 top-6 z-20">
+        <div className="fixed left-4 top-4 md:left-6 md:top-6 z-20">
           <div className="border [border-color:rgba(53,53,53,0.64)] bg-[#fefdfc]">
             <a href="/"><img src="/images/initials_icon.svg" alt="LZ" className="w-11 h-11 block" /></a>
           </div>
         </div>
 
         {/* main framed container */}
-        <div className="fixed inset-6 z-10 border [border-color:rgba(53,53,53,0.64)] bg-white overflow-hidden flex flex-col">
+        <div className="fixed inset-4 md:inset-6 z-10 border [border-color:rgba(53,53,53,0.64)] bg-white overflow-hidden flex flex-col">
           {/* dotted background */}
           <div aria-hidden className="absolute inset-0 bg-dot-grid pointer-events-none" />
 
