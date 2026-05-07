@@ -26,17 +26,10 @@ export default function HomePage() {
       </div>
 
       <p className="text-slate-700">
-        A 2nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
-        </a> Amateur <Link 
-                      href="/about" 
-                      className={`${
-                        pathname === "/about" 
-                          ? "font-semibold text-slate-700" 
-                          : "text-slate-700 hover:text-slate-600"
-                      }`}
-                    >photographer.
-                    </Link>
+        An incoming 3nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
+        </a> 
         {/* todo add random photo on hover */}
+        &nbsp;This summer, I'm interning as a Software Developer at Dishon Limited.
       </p>
       <ul className="list-disc pl-5 space-y-2 text-slate-700">
         <li>
@@ -51,11 +44,19 @@ export default function HomePage() {
                     </Link></span> I'm interested in full-stack development and data science.
         </li>
         <li>
-          <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Summer 2026 internships!
+          <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Fall 2026 internships!
         </li>
       </ul>
       <p>
-        While not tackling LeetCode problems, I'm probably tackling the local trails on my mountain bike. I also love reading sci-fi/fantasy books, play the guitar, have a cat named Latte, and a sister who was fortunately not named Latte.
+        While not tackling LeetCode problems, I'm probably tackling the local trails on my mountain bike. I also love reading sci-fi/fantasy books, play the guitar, am an amateur <Link 
+                      href="/about" 
+                      className={`${
+                        pathname === "/about" 
+                          ? "font-semibold text-slate-700" 
+                          : "text-slate-700 hover:text-slate-600"
+                      }`}
+                    >photographer, 
+                    </Link> have a cat named Latte, and a sister who was fortunately not named Latte.
       </p>
 
 
