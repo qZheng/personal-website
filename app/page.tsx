@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="max-w-3xl space-y-[1.65rem]">
       <img
-        src="/images/latte_and_i.jpeg"
+        src="/images/IMG_5724.jpg"
         alt="Lucas Zheng"
         className="mr-2 w-28 h-28 md:w-33 md:h-33 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
       />
