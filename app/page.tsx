@@ -44,7 +44,7 @@ export default function HomePage() {
                     </Link></span> I'm interested in full-stack development and data science.
         </li>
         <li>
-          <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Fall 2026 internships!
+          <span className="font-semibold"><a href="/Lucas_Zheng_Resume.pdf" target="_blank">View my resume.</a></span> Currently searching for Winter 2026 internships!
         </li>
       </ul>
       <p>

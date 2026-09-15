@@ -34,7 +34,7 @@ export default function AboutPage() {
   const singingSandsSunset: Photo = {
     src: "/photos/DSC01923.PNG",
     alt: "Sunset at Singing Sands beach in Tobermory.",
-    caption: "Caught this one during a camping trip with my friends at Bruce Peninsula National Park. ",
+    caption: "Shot this in Tobermory",
   };
 
   const bird: Photo = {
@@ -75,60 +75,60 @@ export default function AboutPage() {
   const foggyNight2: Photo = {
     src: "/photos/_DSC0475.JPG",
     alt: "",
-    caption: "A very foggy night",
+    caption: "Foggy night",
   };
  const lightPainting: Photo = {
     src: "/photos/_DSC9649.JPG",
     alt: "",
-    caption: "Light painting Highway 407",
+    caption: "Light painting the 407",
   };
 
  const liminalRoad: Photo = {
     src: "/photos/_DSC9812.JPG",
     alt: "",
-    caption: "A road to nowhere...",
+    caption: "Road to nowhere...",
   };
 
  const campingTrip: Photo = {
     src: "/photos/IMG_2586.PNG",
     alt: "",
-    caption: "So I had to put this one in here, the aftermath of the trip we now call \"The Camping Trip of Despair and Misfortune\". Packing up camp in the pouring rain to finish it off.",
+    caption: "The Camping Trip of Despair and Misfortune",
   };
   
  const CatAndI: Photo = {
     src: "/photos/IMG_3884.JPG",
     alt: "",
-    caption: "Took this one after the cat jumped on me to sit on my lap while I was minding my own business.",
+    caption: "Cat",
   };
   
   const momAndDadAndKitty: Photo = {
     src: "/photos/DSC02256.PNG",
     alt: "Photo of mom and dad with the cat",
-    caption: "A cute candid photo of my parents and the cat 🐈",
+    caption: "Candid photo of my parents and the cat 🐈",
   };
 
   const oakvilleSunset: Photo = {
     src: "/photos/DSC02283.JPG",
     alt: "Landscape photo 1",
-    caption: "A beautiful sunset caught in downtown Oakville.",
+    caption: "Sunset caught in downtown Oakville.",
   };
 
   const oakvilleSunset2: Photo = {
     src: "/photos/DSC02289.JPG",
     alt: "Landscape photo 2",
-    caption: "A beautiful sunset caught in downtown Oakville.",
+    caption: "Sunset in downtown Oakville.",
   };
 
   const latte1: Photo = {
     src: "/photos/DSC02292.JPG",
     alt: "Cat",
-    caption: "Latte sleeping in an interesting position...",
+    caption: "Cat",
   };
 
   const latte2: Photo = {
     src: "/photos/DSC02719.JPG",
     alt: "The cat sleeping on my dad",
-    caption: "That side eye... Latte loves sleeping on us."
+    caption: "Cat"
   }
 
   const friends: Photo = {
@@ -152,13 +152,13 @@ export default function AboutPage() {
   const nightSky2: Photo = {
     src: "/photos/DSC02633.JPG",
     alt: "Red tree, night sky",
-    caption: "Accidentally light painted this tree after a friend didn't turn off her flashlight.",
+    caption: "Light painted this tree after a friend didn't turn off her flashlight.",
   };
 
   const kayaks: Photo = {
     src: "/photos/DSC02656.JPG",
     alt: "Kayaks on a lake",
-    caption: "After an all nighter in the jacuzzi, I brought my camera when we decided to go out onto the kayaks to watch the sunrise.",
+    caption: "After an all nighter in the jacuzzi watching the sunrise on the lake.",
   };
 
 
@@ -173,16 +173,14 @@ export default function AboutPage() {
       </h1>
 
       <p className="text-slate-700">
-        Despite being an apparent workaholic (according to friends), I
-        [surprisingly?] do have other stuff going on in life.
+        Outside of programming, I [surprisingly?] do have other stuff I quite like doing.
       </p>
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-semibold leading-tight">Some photos.</h2>
-        <p className="text-slate-700 text-sm">
-          A few photos that I think are pretty neat! Click on any of them to see a larger version and a caption.
-        </p>
-
+        <h2 className="text-2xl font-semibold leading-tight">Cool photos</h2>
+          <p className="text-slate-700 text-sm">
+              A few photos that I think are pretty neat! I like showing people cat photos... all are shot on my iPhone or Sony A7RIII (Tamron 28-75)
+          </p>
         <div className="space-y-2">
           <PatternSingle photo={oakvilleSunset} onSelect={setActivePhoto} />
           <PatternTwoLandscapes
@@ -230,8 +228,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <h2 className="text-2xl font-semibold leading-tight">Music - lastfm api to-do...</h2>
+      <h2 className="text-2xl font-semibold leading-tight">Imagine a video of me playing the guitar here...</h2>
       {/* to-do - lastfm api */}
+      <h2 className="text-2xl font-semibold leading-tight">Also my goodreads</h2>
 
       {/* lightbox */}
       {activePhoto && (
