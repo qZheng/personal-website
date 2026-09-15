@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+public/MCM_TS_MCOFF.pdf
+public/Lucas_Zheng_Resume_Transcript.pdf

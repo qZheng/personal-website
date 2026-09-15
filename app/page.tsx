@@ -26,10 +26,10 @@ export default function HomePage() {
       </div>
 
       <p className="text-slate-700">
-        An incoming 3nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
+        A 3nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
         </a> 
         {/* todo add random photo on hover */}
-        &nbsp;This summer, I'm interning as a Software Developer at <a href="https://dishoncnc.com" target="_blank"> Dishon Limited.</a>
+        &nbsp;Currently, I'm a continuing my internship project as a part-time Software Developer at <a href="https://dishoncnc.com" target="_blank"> Dishon Limited.</a>
       </p>
       <ul className="list-disc pl-5 space-y-2 text-slate-700">
         <li>
