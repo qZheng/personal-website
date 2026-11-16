@@ -13,7 +13,7 @@ export default function HomePage() {
       <img
         src="/images/IMG_8178.jpg"
         alt="Lucas Zheng"
-        className="mr-2 w-28 h-28 md:w-33 md:h-33 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
+        className="mr-2 w-28 h-28 md:w-38 md:h-38 object-cover rounded-lg shadow-md float-right ml-3 md:ml-6 mb-2"
       />
       <div className="space-y-0">
         <h1 className="text-4xl md:text-3xl font-semibold leading-tight">Lucas Zheng</h1>
@@ -29,7 +29,7 @@ export default function HomePage() {
         A 3nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
         </a> 
         {/* todo add random photo on hover */}
-        &nbsp;Currently, I'm a continuing my internship project as a part-time Software Developer at <a href="https://dishoncnc.com" target="_blank"> Dishon Limited.</a>
+        &nbsp;Currently, I'm developing internal tooling as a part-time Software Developer at <a href="https://dishoncnc.com" target="_blank"> Dishon Limited.</a>
       </p>
       <ul className="list-disc pl-5 space-y-2 text-slate-700">
         <li>
@@ -61,7 +61,7 @@ export default function HomePage() {
 
 
       <p className="text-slate-700">
-        If you would like to talk to me about anything (even random things!) reach me at:{" "}
+        If you would like to talk about anything (literally anything, send me random emails!) reach me at:{" "}
         <a href="mailto:lucas@qzheng.ca">lucas@qzheng.ca</a>.
       </p>
     </div>
