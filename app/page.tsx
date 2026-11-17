@@ -26,7 +26,7 @@ export default function HomePage() {
       </div>
 
       <p className="text-slate-700">
-        A 3nd year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
+        A 3rd-year computer science student @ <a href="https://www.mcmaster.ca/" target="_blank">McMaster University.
         </a> 
         {/* todo add random photo on hover */}
         &nbsp;Currently, I'm developing internal tooling as a part-time Software Developer at <a href="https://dishoncnc.com" target="_blank"> Dishon Limited.</a>
